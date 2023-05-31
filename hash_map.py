@@ -20,8 +20,7 @@ class HashMap:
       if item[0] == key:
         item[1] = value
         return
-    list_of_array.insert(payload)   
-    
+    list_of_array.insert(payload)       
 
   def retrieve(self, key):
     array_index = self.compress(self.hash(key))
@@ -29,8 +28,4 @@ class HashMap:
     for item in list_at_index:
       if item[0] == key:
         return item[1]      
-    return None
-        
-blossom = HashMap(len(flower_definitions))
-for element in flower_definitions:
-  blossom.assign(element[0], element[1])      
+    return None     
