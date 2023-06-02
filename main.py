@@ -21,5 +21,3 @@ while True:
         print('\n Sorry, that flower is not in our database, try again.\n')
     else:
         print(f"\nThe {user_input} symbolizes {flower_data}!\n")
-
-        
